@@ -18,4 +18,5 @@ $ yarn start
 ```
 
 ### Send JSON data from your App by http POST method.
-**Rout to receive data: [http://localhost:7777/api/news](http://localhost:7777/api/news)**
+* Rout to receive data: [http://localhost:7777/api/news](http://localhost:7777/api/news)
+* use [Robo 3T](https://robomongo.org/) to check data in DB
