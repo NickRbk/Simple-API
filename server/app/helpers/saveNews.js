@@ -33,10 +33,10 @@ module.exports = function saveNews(dataset, generalData) {
 
             news.save()
                 .then(() => {
-                    resolve('Your data saved successfully!');
+                    resolve('Success');
                 })
-                .catch(() => {
-                    reject('Error');
+                .catch((e) => {
+                    reject(e.toString());
                 });
         });
     });
