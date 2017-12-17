@@ -8,7 +8,7 @@ First install [node.js](http://nodejs.org/), [yarn](https://yarnpkg.com/lang/en/
 ``` sh
 $ yarn install
 ```
-##### start project
+## Start project
 
 **Note:** _create folder for MongoDB storage_
 ``` sh
@@ -16,3 +16,6 @@ $ mongod --dbpath /your-path-to-local-mongodb-storage/
 $ mongo
 $ yarn start
 ```
+
+####Send JSON data from your App by http POST method.
+**Rout to receive data: [http://localhost:7777/api/news](http://localhost:7777/api/news)**
