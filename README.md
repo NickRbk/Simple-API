@@ -17,5 +17,5 @@ $ mongo
 $ yarn start
 ```
 
-####Send JSON data from your App by http POST method.
+### Send JSON data from your App by http POST method.
 **Rout to receive data: [http://localhost:7777/api/news](http://localhost:7777/api/news)**
