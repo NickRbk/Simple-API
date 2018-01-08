@@ -8,12 +8,10 @@ const NewsSchema = new Schema({
     dateProject: String,
     timeProject: String,
     title: String,
-    author: String,
-    description: String,
     date: String,
     time: String,
-    domain: String,
-    url: String,
+    author: String,
+    description: String,
     rubrics: [{
         name: String
     }],
@@ -21,7 +19,9 @@ const NewsSchema = new Schema({
         kind: String,
         name: String,
         rank: String
-    }]
+    }],
+    domain: String,
+    url: String
 });
 
 const News = mongoose.model('news', NewsSchema);

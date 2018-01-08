@@ -6,13 +6,13 @@ mongoose.Promise = global.Promise;
 // CONNECT TO OUR DATABASE
 // ========================
 //mongoose.createConnection(process.env.MONGODB_URI);
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true });
 
 mongoose.connection
   .once('open', () => console.log('Connected to MongoLab instance.'))
   .on('error', () => {
     console.log('Reconnect with MongoDB...');
-    mongoose.connect(process.env.MONGODB_URI);
+    mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true });
   });
 
 module.exports = {mongoose};
